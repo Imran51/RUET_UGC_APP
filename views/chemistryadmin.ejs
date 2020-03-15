@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	    form{
+	    	margin-top: 200px;
+	    }
+		form table tr th input{
+			resize: horizontal;
+		    width: 300px;
+		    padding: 3px;
+		    font-size: 17px;
+		}
+		form table tr th button{
+			font-size: 17px;
+		}
+		body{background: lightgray;}
+	</style>
+</head>
+<body>
+<form action="/chemistryadmin" method="post">
+	<table width="400" height="130" border="1" align="center">
+		<tr>
+		 <th colspan="2"><h1>Admin login</h1></th>
+	   </tr>
+		<tr>
+			<th>Username:</th>
+			<th><input type="text" name="username" placeholder="Username" width="300"></th>
+		</tr>
+		<tr>
+			<th>Password:</th>
+			<th><input type="password" name="password" placeholder="Password"></th>
+		</tr>
+		<tr>
+			<th colspan="2"><button type="submit">submit</button></th>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
