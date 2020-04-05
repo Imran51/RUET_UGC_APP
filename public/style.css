@@ -218,3 +218,24 @@ select,option{
     display:inline-block;
     vertical-align: middle;
 }   */
+
+.form-group-padding{
+	margin-top: .6rem !important;
+	margin-bottom: .5rem !important;
+}
+.logoutItemPadding{
+	margin-top: .20rem !important;
+}
+
+.table thead th{
+	vertical-align: middle !important;
+}
+tr{
+	border-color: black;
+}
+.table tr td {
+	border-bottom: 1px solid black; /* Change the color you want to set */
+ }
+ .table tr th {
+	border-bottom: 1px solid black; /* Change the color you want to set */
+ }
