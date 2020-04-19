@@ -1124,13 +1124,15 @@
 		<br>
 
 		<h3>এমফিল ও পিএইচডি অন্যান্য পর্যায়ে(বিদেশী শিক্ষার্থীসহ)</h3>
-		<table border="1" width="900" align="center">
+		<table border="1" width="900" align="center" class="table">
+		<thead class="thead-dark">
 		<tr>
 			<th>অনুষদ/স্কুল্/ইনস্টিটিউট/একাডেমির নাম</th>
 			<th>বিভাগের নাম</th>
 			<th>ডিগ্রি</th>
 			<th colspan="3">ভর্তিকৃত শিক্ষার্থীর সংখ্যা</th>
 		</tr>
+	</thead>
 		<tr>
 			<th></th>
 			<th></th>
@@ -1261,13 +1263,15 @@
 		<br>
 
 		<h3><%=user._id%>  সালে মুলবিষয়ভিত্তিক পরিসংখ্যানঃ</h3>
-		<table border="1" width="900" align="center">
+		<table border="1" width="900" align="center" class="table">
+		<thead class="thead-dark">	
 		<tr>
 			<th>মুল বিষয়</th>
 			<th>ছাত্র</th>
 			<th>ছাত্রী</th>
 			<th>মোট</th>
 		</tr>
+		</thead>
 		<tr>
 			<th>কলা ও মানবিক</th>
 			<td><%=commiteuser.artsmalestudent%></td>
@@ -1347,13 +1351,15 @@
 
 
 		<h3><%=user._id%>  সালে ড্রপ আউটের হারঃ </h3> 
-		<table border="1" width="900" align="center" class="table2">
+		<table border="1" width="900" align="center" class="table">
+			<thead class="thead-dark">
 			<tr>
 				<th rowspan="2">ক্রমিক নং</th>
 				<th rowspan="2">অনুষদ/স্কুল্/ইনস্টিটিউট/একাডেমির নাম</th>
 				<th rowspan="2">বিভাগ</th>
 				<th colspan="3">শতকরা হার</th>
 			</tr>
+			</thead>
 			<tr>
 				<th>ছাত্র</th>
 				<th>ছাত্রী</th>
@@ -1402,13 +1408,15 @@
 		</table><br>
 
 		<h3><%=user._id%>  সালে বিনাবেতনে ও বৃত্তিপ্রাপ্ত শিক্ষার্থীর বিবরণঃ</h3>
-		<table border="1" width="900" align="center" class="table3">
+		<table border="1" width="900" align="center" class="table">
+			<thead class="thead-dark">
 			<tr>
 				<th>বিবরণ</th>
 				<th>ছাত্র</th>
 				<th>ছাত্রী</th>
 				<th>মোট</th>
 			</tr>
+			</thead>
 			<tr>
 				<th>বিনাবেতনে অধ্যায়ন্রত শিক্ষার্থী</th>
 				<td><%=educationsectionuser.fullfreemalestudent%></td>
@@ -1442,7 +1450,8 @@
 		</table><br>
 
 		<h3><%=user._id%>  সালে মোট পদ ভিত্তিক শিক্ষক সংখ্যাঃ</h3>
-		<table border="1" width="900" align="center" class="table1">
+		<table border="1" width="900" align="center" class="table">
+			<thead class="thead-dark">
 		<tr>
 			<th rowspan="2">পদ</th>
 			<th rowspan="2">অনুমোদিত পদ সংখ্যা</th>
@@ -1450,6 +1459,7 @@
 			<th colspan="3">খন্ডকালিন/চুক্তিভিত্তিক/এডহক শিক্ষক সংখ্যা</th>
 			<th colspan="3">মোট</th>
 		</tr>
+		</thead>
 		<tr>
 			<th>পুরুষ</th>
 			<th>মহিলা</th>
@@ -1660,12 +1670,14 @@
 		</table><br>
 
 		<h3><%=user._id%>  সালে ডিগ্রিভিত্তিক শিক্ষকদের পরিসংখ্যানঃ</h3>
-		<table border="1" width="900" align="center">
+		<table border="1" width="900" align="center"class="table">
+			<thead class="thead-dark">
 		<tr>
 			<th rowspan="2">ডিগ্রি</th>
 			<th colspan="3">পূর্ণকালিন  শিক্ষক সংখ্যা</th>
 			<th colspan="3">খন্ডকালিন  শিক্ষক সংখ্যা</th>
 		</tr>
+			</thead>
 		<tr>
 			<th>পুরুষ</th>
 			<th>মহিলা</th>
@@ -1752,14 +1764,15 @@
 		<br>
 
 		<h3><%=user._id%>  সালে কর্মরত ও অনুপস্থিত শিক্ষকদের পরিসংখ্যানঃ</h3>
-		<table border="1" width="900" align="center" class="table2">
-
+		<table border="1" width="900" align="center" class="table">
+			<thead class="thead-dark">
 		<tr>
 			<th>বিবরণ</th>
 			<th>পুরুষ</th>
 			<th>মহিলা</th>
 			<th>মোট</th>
 		</tr>
+			</thead>
 		<tr>
 			<th>কর্মরত শিক্ষক</th>
 			<td><%=foundationsectionuser.workingmaleteacher%></td>
@@ -1820,9 +1833,10 @@
 		<br>
 
 		<h3><%=user._id%>  সালে অনুষদ/স্কুল্/ইনস্টিটিউট/একাডেমি ও অন্যান্য বিষয়ভিত্তিক শিক্ষক-শিক্ষার্থীর অনুপাতঃ</h3>
-		<table border="1" width="900" align="center" class="table2">
+		<table border="1" width="900" align="center" class="table">
+			<thead class="thead-dark">
 		<tr>
-			<th>অনুষদ/স্কুল্/ইনস্টিটিউট/একাডেমির নাম</th>
+			<th>অনুষদ/স্কুল��/ইনস্টিটিউট/একাডেমির নাম</th>
 			<th>বিভাগের নাম</th>
 			<th>মোট শিক্ষক</th>
 			<th>ছাত্র</th>
@@ -1830,7 +1844,7 @@
 			<th>মোট শিক্ষার্থী</th>
 			<th>শিক্ষকঃশিক্ষার্থী</th>
 		</tr>
-
+			</thead>
 		<tr>
 			<th rowspan="4">তড়িৎ ও কম্পিউটার কৌশল অনুষদ </th>
 			<th>তড়িৎ ও ইলেকট্রনিক প্রকৌশল বিভাগ</th>
@@ -1971,12 +1985,14 @@
 		<br>
 
 		<h3><%=user._id%>  সালে কর্মকর্তা ও কর্মচারী পরিসংখ্যানঃ</h3>
-		<table border="1" width="900" align="center" class="table3">
+		<table border="1" width="900" align="center" class="table">
+			<thead class="thead-dark">
 		<tr>
 			<th rowspan="2">কর্মকর্তা ও কর্মচারী</th>
 			<th rowspan="2">অনুমোদিত পদ সংখ্যা</th>
 			<th colspan="3">সংখ্যা</th>
 		</tr>
+			</thead>
 		<tr>
 		<th>পুরুষ</th>
 		<th>মহিলা</th>
@@ -2039,12 +2055,14 @@
 		<br>
 
 		<h3><%=user._id%>  সালে শিক্ষক,কর্মকর্তা,কর্মচারী ও শিক্ষার্থীর অনুপাতঃ</h3>
-		<table border="1" width="900" align="center">
+		<table border="1" width="900" align="center" class="table">
+			<thead class="thead-dark">
 		<tr>
 			<th>শিক্ষকঃশিক্ষার্থী </th>
 			<th>কর্মকর্তাঃশিক্ষার্থী</th>
 			<th>কর্মচারীঃশিক্ষার্থী</th>
 		</tr>
+			</thead>
 		<tr>
 			<td><%=commiteuser.teacheronupatstudent%></td>
 			<td><%=commiteuser.officeronupatstudent%></td>
@@ -2054,13 +2072,15 @@
 		<br>
 
 		<h3><%=user._id%>  সালে গ্রন্থাগার ও পাথপকরনের বিবরণঃ</h3>
-		<table border="1" width="900" align="center" class="table1">
+		<table border="1" width="900" align="center" class="table">
+			<thead class="thead-dark">
 			<tr>
 			<th>বিবরণ</th>
 			<th>বই</th>
 			<th>জার্নাল</th>
 			<th>অডিওভিজুয়েল সামগ্রী</th>
 		</tr>
+			</thead>
 		<tr>
 			<th>গ্রন্থাগার সামগ্রীর মোট মজুদ সংখ্যা</th>
 			<td><%=libraryuser.totallibrarybook%></td>
@@ -2088,7 +2108,8 @@
 		</table><br>
 
 		<h3><%=user._id%>  সালে গ্রন্থাগার সামগ্রী সংগ্রহের খাতওয়ারী ব্যয়(টাকায়)</h3>
-		<table border="1" width="900" align="center" class="table1">
+		<table border="1" width="900" align="center" class="table">
+			<thead class="thead-dark">
 			<tr>
 				<th>উৎস</th>
 				<th>রাজস্ব বরাদ্দ</th>
@@ -2096,6 +2117,7 @@
 				<th>নিজস্ব বরাদ্দ</th>
 				<th>বিদেশী উৎস/অন্যান্য </th>
 			</tr>
+			</thead>
 			<tr>
 				<th>ব্যয়</th>
 				<td><%=accountsectionuser.revenueallocation%></td>
@@ -2107,11 +2129,13 @@
 		<br>
 
 		<h3><%=user._id%>  সালে গ্রন্থাগারে নিয়োজিত জনবলঃ</h3>
-		<table border="1" width="900" align="center" class="table1">
+		<table border="1" width="900" align="center" class="table">
+			<thead class="thead-dark">
 		<tr>
 		<th rowspan="2">জনবল</th>
 		<th colspan="3">সংখ্যা</th>
 		</tr>
+			</thead>
 		<tr>
 		<th>পুরুষ</th>
 		<th>মহিলা</th>
@@ -2133,13 +2157,15 @@
 
 		<h3>গবেষণা ও প্রকাশনা</h3>
 		<h3><%=user._id%>  সালে তড়িৎ ও কম্পিউটার কৌশল অনুষদের গবেষণা ও প্রকাশনার বিস্তারিত বিবরন </h3>
-		<table border="1" width="900" align="center">
+		<table border="1" width="900" align="center" class="table">
+			<thead class="thead-dark">
 		<tr>
 			<th>অনুষদ/স্কুল্/ইনস্টিটিউট/একাডেমির নাম</th>
 			<th>বিভাগের নাম</th>
 			<th>গবেষণা/প্রকাশনা(প্রকাশিত ও অপ্রকাশিত) এর বিবরণ</th>
 			<th>সংখ্যা</th>
 		</tr>
+			</thead>
 		<tr>
 			<th rowspan="44">তড়িৎ ও কম্পিউটার কৌশল অনুষদ </th>
 			<th rowspan="11">তড়িৎ ও ইলেকট্রনিক প্রকৌশল বিভাগ</th>
@@ -2333,13 +2359,15 @@
 		<br>
 
 		<h3><%=user._id%>  সালে যন্ত্রকৌশল অনুষদের গবেষণা ও প্রকাশনার বিস্তারিত বিবরন</h3>
-		<table border="1" width="900" align="center">
+		<table border="1" width="900" align="center" class="table">
+			<thead class="thead-dark">
 		<tr>
 			<th>অনুষদ/স্কুল্/ইনস্টিটিউট/একাডেমির নাম</th>
 			<th>বিভাগের নাম</th>
 			<th>গবেষণা/প্রকাশনা(প্রকাশিত ও অপ্রকাশিত) এর বিবরণ</th>
 			<th>সংখ্যা</th>
 		</tr>
+			</thead>
 		<tr>
 			<th rowspan="66">যন্ত্রকৌশল অনুষদ </th>
 			<th rowspan="11">যন্ত্রকৌশল বিভাগ</th>
@@ -2623,13 +2651,15 @@
 		</table><br>
 
 		<h3><%=user._id%>  সালে পুরকৌশল অনুষদের গবেষণা ও প্রকাশনার বিস্তারিত বিবরন</h3>
-		<table border="1" width="900" align="center">
+		<table border="1" width="900" align="center" class="table">
+			<thead class="thead-dark">
 		<tr>
 			<th>অনুষদ/স্কুল্/ইনস্টিটিউট/একাডেমির নাম</th>
 			<th>বিভাগের নাম</th>
 			<th>গবেষণা/প্রকাশনা(প্রকাশিত ও অপ্রকাশিত) এর বিবরণ</th>
 			<th>সংখ্যা</th>
 		</tr>
+			</thead>
 		<tr>
 			<th rowspan="44">পুরকৌশল অনুষদ </th>
 			<th rowspan="11">পুরকৌশল বিভাগ</th>
@@ -2821,13 +2851,15 @@
 		</table><br>
 
 		<h3><%=user._id%>  সালে অ্যাপ্লায়েড সায়েন্স এন্ড হিউম্যানিটিজ অনুষদের গবেষণা ও প্রকাশনার বিস্তারিত বিবরন</h3>
-		<table border="1" width="900" align="center">
+		<table border="1" width="900" align="center" class="table">
+			<thead class="thead-dark">
 		<tr>
 			<th>অনুষদ/স্কুল্/ইনস্টিটিউট/একাডেমির নাম</th>
 			<th>বিভাগের নাম</th>
 			<th>গবেষণা/প্রকাশনা(প্রকাশিত ও অপ্রকাশিত) এর বিবরণ</th>
 			<th>সংখ্যা</th>
 		</tr>
+			</thead>
 		<tr>
 			<th rowspan="44">অ্যাপ্লায়েড সায়েন্স এন্ড হিউম্যানিটিজ অনুষদ</th>
 			<th rowspan="11">গণিত বিভাগ</th>
@@ -3019,13 +3051,15 @@
 		</table><br>
 
 		<h3><%=user._id%>  সালে গবেষণা খাতে ব্যায়ের পরিমান</h3>
-		<table border="1" width="900" align="center" class="table2">
+		<table border="1" width="900" align="center" class="table">
+			<thead class="thead-dark">
 			<tr>
 			<th>উৎস</th>
 			<th>টাকার পরিমান</th>
 			<th>ব্যয়ের পরিমান(টাকায়)</th>
 			<th>ব্যয়ের কত শতাংশ</th>   
 			</tr>
+			</thead>
 			<tr> 
 			<th>রাজস্ব বরাদ্দ</th>
 			<td><%=accountsectionuser.rrevenueallocation%></td>
@@ -3060,12 +3094,14 @@
 		</table><br>
 
 		<h3><%=user._id%>  সালে বিশ্ববিদ্যালয়ের বাজেটের অর্থের উৎসঃ</h3>
-		<table border="1" width="900" align="center" class="table3">
+		<table border="1" width="900" align="center" class="table">
+			<thead class="thead-dark">
 			<tr>
 				<th>ক্রমিক নং</th>
 				<th>উৎস</th>
 				<th>অর্থের পরিমান</th>
 			</tr>
+			</thead>
 			<tr>
 				<th>i.</th>
 				<th>বিমক করতৃক অনুদান</th>
@@ -3094,13 +3130,15 @@
 		</table>
 		<br>
 		<h3><%=user._id%>  সালে বিভিন্ন খাতে মোট ব্যয়ের বিবরণঃ</h3>
-		<table border="1" width="900" align="center" class="table3">
+		<table border="1" width="900" align="center" class="table">
+			<thead class="thead-dark">
 			<tr>
 				<th>ক্রমিক নং</th>
 				<th>খাত</th>
 				<th>টাকার পরিমান</th>
 				<th>বাজেটের কত শতাংশ</th>
 			</tr>
+			</thead>
 			<tr>
 				<th>i.</th>
 				<th>শিক্ষা</th>
@@ -3153,13 +3191,15 @@
 		<br>
 
 		<h3><%=user._id%> সালে ভৌত কাঠামোর বিবরণঃ</h3>
-		<table border="1" width="900" align="center" class="table1">
+		<table border="1" width="900" align="center" class="table">
+			<thead class="thead-dark">
 			<tr>
 				<th>ক্রমিক নং</th>
 				<th>কক্ষ/ভবনের প্রকার</th>
 				<th>সংখ্যা</th>
 				<th>মোট আয়তন(বর্গফুট)</th>
 			</tr>
+			</thead>
 			<tr>
 				<th>i.</th>
 				<th>শ্রেনী কক্ষ</th>
@@ -3248,11 +3288,13 @@
 		<br>
 
 		<h3><%=user._id%> সালে আবাসিক শিক্ষার্থীর পরিসংখ্যান</h3>
-		<table border="1" width="900" align="center">
+		<table border="1" width="900" align="center" class="table">
+			<thead class="thead-dark">
 			<tr>
 				<th rowspan="2">হল/ডরমিটরি নাম</th>
 				<th colspan="3">সংখ্যা</th>
 			</tr>
+			</thead>
 			<tr>
 				<th>ছাত্র</th>
 				<th>ছাত্রী</th>
@@ -3313,11 +3355,13 @@
 		<br>
 
 		<h3><%=user._id%> সালে আবাসিক সুবিধাপ্রাপ্ত শিক্ষক, কর্মকর্তা ও কর্মচারীদের পরিসংখ্যানঃ</h3>
-		<table border="1" width="900" align="center" class="table3">
+		<table border="1" width="900" align="center" class="table">
+			<thead class="thead-dark">
 			<tr>
 				<th rowspan="2">পদ</th>
 				<th colspan="3">সংখ্যা</th>
 			</tr>
+			</thead>
 			<tr>
 				<th>পুরুষ</th>
 				<th>মহিলা</th>
@@ -3351,7 +3395,8 @@
 		<br>
 
 		<h3><%=user._id%> সালে জানুয়ারী থেকে ডিসেম্বরের মধ্যে বিশ্ববিদ্যালয়ের ডিগ্রিপ্রাপ্ত শিক্ষার্থীর পরিসংখানঃ</h3>
-		<table border="1" width="900" align="center" class="table4">
+		<table border="1" width="900" align="center" class="table">
+			<thead class="thead-dark">
 			<tr>
 				<th rowspan="2">ডিগ্রির নাম</th>
 				<th rowspan="2">বিষয়</th>
@@ -3360,6 +3405,7 @@
 				<th colspan="3">উত্তীর্ণ</th>
 				<th rowspan="2">শতকরা হার</th>
 			</tr>
+			</thead>
 			<tr>
 				<th>ছাত্র</th>
 				<th>ছাত্রী</th>
@@ -3420,13 +3466,15 @@
 		<br>
 
 		<h3>এক নজরে বিশ্ববিদ্যালয়ের উল্লেখযোগ্য তথ্যঃ</h3>
-		<table border="1" width="900" align="center">
+		<table border="1" width="900" align="center" class="table">
+			<thead class="thead-dark">
 			<tr>
 			<th>বিশ্ববিদ্যালয়ের উল্লেখযোগ্য তথ্য পরিসংখ্যানঃ</th>
 			<th></th>
 			<th>শিক্ষক পরিসংখ্যানঃ</th>
 			<th></th>
 			</tr>
+			</thead>
 			<tr>
 			<th>নিজস্ব জমির পরিমান(একর)-</th>
 			<td><%=commiteuser.totalland%></td>
