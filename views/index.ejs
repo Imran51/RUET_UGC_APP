@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="/public/navbarSearch.js">
+	</script>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="/public/style.css">
 	<link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css">
@@ -10,93 +12,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <body>
-	<!-- <div class="menu">
-        <ul>
-        	<li><a href="/">Home</a></li>
-            <li><a href="#">Insert</a>
-            	<ul>
-            		<li><a href="#">ECE Faculty</a>
-            			<ul>
-            				<li><a href="/eeeadmin" target="_blank">EEE</a></li>
-            				<li><a href="/cseadmin" target="_blank">CSE</a></li>
-            				<li><a href="/eteadmin" target="_blank">ETE</a></li>
-            				<li><a href="/eceadmin" target="_blank">ECE</a></li>
-            			</ul>
-            		</li>
-            		<li><a href="#">ME Faculty</a>
-            			<ul>
-            				<li><a href="/meadmin" target="_blank">ME</a></li>
-            				<li><a href="/ipeadmin" target="_blank">IPE</a></li>
-            				<li><a href="/gceadmin" target="_blank">GCE</a></li>
-            				<li><a href="/mteadmin" target="_blank">MTE</a></li>
-            				<li><a href="/mseadmin" target="_blank">MSE</a></li>
-            				<li><a href="/cfpeadmin" target="_blank">CFPE</a></li>
-            			</ul>
-
-            		</li>
-            		<li><a href="#">CE Faculty</a>
-            			<ul>
-            				<li><a href="/ceadmin" target="_blank">CE</a></li>
-            				<li><a href="/becmadmin" target="_blank">BECM</a></li>
-            				<li><a href="/urpadmin" target="_blank">URP</a></li>
-            				<li><a href="/archiadmin" target="_blank">ARCHI</a></li>
-            			</ul>
-
-            		</li>
-            		<li><a href="#">ASH Faculty</a>
-            			<ul>
-            				<li><a href="/humadmin" target="_blank">HUM</a></li>
-            				<li><a href="/mathadmin" target="_blank">MATH</a></li>
-            				<li><a href="/physicsadmin" target="_blank">PHYSICS</a></li>
-            				<li><a href="/chemistryadmin" target="_blank">CHEMISTRY</a></li>
-            			</ul>
-
-            		</li>
-            		<li><a href="#">Others</a>
-            			<ul>
-            				<li><a href="/educationsectionadmin" target="_blank">EDUCATION</a></li>
-            				<li><a href="/engineeringsectionadmin" target="_blank">ENGINEERING</a></li>
-            				<li><a href="/foundationsectionadmin" target="_blank">FOUNDATION</a></li>
-            				<li><a href="/accountsectionadmin" target="_blank">ACCOUNT</a></li>
-            				<li><a href="/commiteadmin" target="_blank">COMMITE</a></li>
-            				<li><a href="/libraryadmin" target="_blank">LIBRARY</a></li>
-            				<li><a href="/halladmin" target="_blank">HALL</a></li>
-            				<li><a href="/computercentreadmin" target="_blank">COMPUTER</a></li>
-            			</ul>
-
-
-
-            		</li>
-            	</ul>
-            </li>
-            <li>
-            	<form action="/session" method="GET">
-                <select name="session">
-                	<option value="2016">2016</option>
-                	<option value="2017">2017</option>
-                    <option value="2018">2018</option>
-                    <option value="2019">2019</option>
-                    <option value="2020">2020</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                    <option value="2023">2023</option>
-                    <option value="2024">2024</option>
-                    <option value="2025">2025</option>
-                    <option value="2026">2026</option>
-                    <option value="2027">2027</option>
-                    <option value="2028">2028</option>
-                    <option value="2029">2029</option>
-                    <option value="2030">2030</option>
-                    <option value="2031">2031</option>
-                    <option value="2032">2032</option>
-                    <option value="2033">2033</option>
-                </select>
-                <button type="submit">submit</button>
-                </form>
-            </li>   
-           <li><a class="active" href="#">logout</a></li> 
-       </ul>
-    </div>  -->
+	
 	<nav class="navbar  navbar-expand-sm navbar-dark bg-dark ">
 		<div class="collapse navbar-collapse" id="navbarCollapse">
 		  <a href="#" class="navbar-brand"> RUET </a>
@@ -319,38 +235,21 @@
 		  </ul>
 		  <ul class="navbar-nav ml-auto">
 			  <li class="nav-item">
-				  <form
+					<form
 					action="/session"
 					method="GET"
-					class="form-group form-group-padding"
-				  >
-					<select name="session" class="form-control selectNavBarStyle">
-					  <option value="2016">2016</option>
-					  <option value="2017">2017</option>
-					  <option value="2018">2018</option>
-					  <option value="2019">2019</option>
-					  <option value="2020">2020</option>
-					  <option value="2021">2021</option>
-					  <option value="2022">2022</option>
-					  <option value="2023">2023</option>
-					  <option value="2024">2024</option>
-					  <option value="2025">2025</option>
-					  <option value="2026">2026</option>
-					  <option value="2027">2027</option>
-					  <option value="2028">2028</option>
-					  <option value="2029">2029</option>
-					  <option value="2030">2030</option>
-					  <option value="2031">2031</option>
-					  <option value="2032">2032</option>
-					  <option value="2033">2033</option>
-					</select>
-					<button
-					  class="btn btn-dark btnNavBarSelectOptionStyle"
-					  type="submit"
+					id="navbarSearch"
+					class="form-inline my-2 form-group-padding"
+					onsubmit="return validateNavBarSearch()"
 					>
-					  Submit
-					</button>
-				  </form>
+						<input class="form-control mr-sm-2" style="font-size:11px !important" id="searchSession" type="number" placeholder="Search e.g: 2016" aria-label="Search" name="session">
+							<button
+							class="btn btn-dark btnNavBarSelectOptionStyle"
+							type="submit"
+							>
+							Search
+							</button>
+					</form>
 				</li>
 				<li class="nav-item"><a class="nav-link logoutItemPadding" href="#" >Logout</a></li>
 		  </ul>
@@ -1361,6 +1260,9 @@
 			</tr>
 			</thead>
 			<tr>
+				<th></th>
+				<th></th>
+				<th></th>
 				<th>ছাত্র</th>
 				<th>ছাত্রী</th>
 				<th>মোট</th>
@@ -1461,6 +1363,8 @@
 		</tr>
 		</thead>
 		<tr>
+			<th></th>
+			<th></th>
 			<th>পুরুষ</th>
 			<th>মহিলা</th>
 			<th>মোট</th>
@@ -1679,6 +1583,7 @@
 		</tr>
 			</thead>
 		<tr>
+			<th></th>
 			<th>পুরুষ</th>
 			<th>মহিলা</th>
 			<th>মোট</th>
@@ -1994,9 +1899,11 @@
 		</tr>
 			</thead>
 		<tr>
-		<th>পুরুষ</th>
-		<th>মহিলা</th>
-		<th>মোট</th>
+			<th></th>
+			<th></th>
+			<th>পুরুষ</th>
+			<th>মহিলা</th>
+			<th>মোট</th>
 		</tr>
 		<tr>
 			<th>কর্মকর্তা(স্থায়ী)</th>
@@ -2137,9 +2044,10 @@
 		</tr>
 			</thead>
 		<tr>
-		<th>পুরুষ</th>
-		<th>মহিলা</th>
-		<th>মোট</th>
+			<th></th>
+			<th>পুরুষ</th>
+			<th>মহিলা</th>
+			<th>মোট</th>
 		</tr>
 		<tr>
 		<th>লাইব্রেরি সায়েন্সে ডিগ্রিপ্রাপ্ত</th>
@@ -3296,6 +3204,7 @@
 			</tr>
 			</thead>
 			<tr>
+				<th></th>
 				<th>ছাত্র</th>
 				<th>ছাত্রী</th>
 				<th>মোট</th>
@@ -3363,6 +3272,7 @@
 			</tr>
 			</thead>
 			<tr>
+				<th></th>
 				<th>পুরুষ</th>
 				<th>মহিলা</th>
 				<th>মোট</th>
@@ -3407,6 +3317,10 @@
 			</tr>
 			</thead>
 			<tr>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
 				<th>ছাত্র</th>
 				<th>ছাত্রী</th>
 				<th>মোট</th>

@@ -54,7 +54,6 @@ app.get('/',function(req,res){
 
 app.get('/session',function(req,res){
   if(req.query.session){
-
   eeeuser.findOne({ _id:req.query.session},function(err,doc){
   if(err) throw err;
    else{
